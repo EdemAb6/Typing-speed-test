@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "SoraFont";
+  src: url("/assets/fonts/Sora/Sora-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 15px 100px 0px 100px;
+  background-color: hsl(0, 0%, 7%);
+  font-family: "SoraFont", sans-serif;
+  position: relative;
+  height: 80vh;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.persb {
+  color: hsl(240, 3%, 46%);
+}
+.person-record-container {
+  display: flex;
+  gap: 10px;
+}
+#record {
+  color: hsl(0, 0%, 100%);
+}
+.nrmltxt {
+  color: hsl(240, 1%, 59%);
+}
+.nrmltxt2 {
+  color: hsl(0, 0%, 100%);
+}
+.second-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.stats {
+  display: flex;
+  gap: 50px;
+}
+.textdiv {
+  position: relative;
+  padding: 0 16px;
+}
+.textdiv:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60%;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.35);
+}
+.choices,
+.difficulty,
+.Mode,
+.diff-container,
+.mode-containter {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#wpm,
+#acc,
+#time {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.choice {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+ 
+}
+.choice:hover {
+  opacity: 0.6;
+}
+.clicked {
+  border-color: hsl(214, 100%, 55%);
+  color: hsl(214, 100%, 55%);
+}
+.text {
+  color: hsl(240, 1%, 59%);
+  font-size: 2rem;
+}
+.choices {
+  position: relative;
+  padding: 0 16px;
+}
+.choices:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  left: 53.5%;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60%;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.35);
+}
+.start {
+  position: absolute;
+  left: 36%;
+  bottom: 50%;
+  text-align: center;
+  display: none;
+}
+#btnStart {
+  width: 140px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: hsl(214, 100%, 55%);
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  cursor: pointer;
+}
+.text-container {
+  /* filter: blur(5px); */
+}
+#p {
+    font-size: 3vw;
+}
+.startText {
+  color: hsl(0, 0%, 100%);
+}

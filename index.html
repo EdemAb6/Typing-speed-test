@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Typing Speed Test</title>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="/assets/images/logo-large.svg" alt="logo">
+    </div>
+    <div class="person-record-container">
+      <img src="/assets/images/icon-personal-best.svg" alt="trophy">
+      <p class="persb">Personal Best: <span id="record" ></span></p> 
+    </div>
+  </header>
+  <div class="second-container">
+    <div class="stats">
+     <div class="textdiv">
+      <p class="nrmltxt">WPM: <span class="nrmltxt2" id="wpm">0</span></p>
+  </div>
+  <div class="textdiv">
+    <p class="nrmltxt" class="textdiv">Accuarcy <span class="nrmltxt2" id="acc">100%</span></p>
+  </div>
+  <div class="textdiv">
+    <p class="nrmltxt">Time: <span class = "nrmltxt2" id="time">0:60</span></p>
+  </div>
+    </div>
+    <div class="choices">
+      <div class="difficulty">
+          <div>
+             <p class="nrmltxt">Difficulty:</p>
+          </div>
+          <div class="diff-container">
+              <div disabled class="choice diff-choice nrmltxt2 ">Easy</div>
+              <div class="choice diff-choice nrmltxt2">Medium</div>
+              <div class="choice diff-choice nrmltxt2 clicked">Hard</div>
+          </div>
+      </div>
+      <div class="Mode">
+        <div>
+          <p class="nrmltxt">Mode:</p>
+        </div>
+        <div class="mode-containter">
+              <div class="choice mode-choice nrmltxt2 clicked">Timed(60s)</div>
+              <div class="choice mode-choice nrmltxt2">Passage</div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-container">
+    <p class="text" id="p"></p>
+  </div>
+  <div class="start">
+    <button id="btnStart">Start Typing Test</button>
+    <p class="startText">Or click the text and start typing</p>    
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
