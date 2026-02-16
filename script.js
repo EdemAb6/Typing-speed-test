@@ -122,6 +122,7 @@ fetch("data.json")
                 localStorage.setItem("record", currentWPM + " WPM");
                 record.textContent = currentWPM + " WPM";
             }
+            
         }
 
         // Difficulty buttons
