@@ -55,11 +55,25 @@
   <div class="text-container">
     <p class="text" id="p"></p>
   </div>
-  <div class="start">
-    <button id="btnStart">Start Typing Test</button>
-    <p class="startText">Or click the text and start typing</p>    
-
+ <div class="result-container">
+  <div>
+      <img src="assets/images/icon-completed.svg" id="Resultimg" alt="">
   </div>
+  <div>
+    <h1 class = "nrmltxt2" id="typeResult">Test Complete!</h1>
+    <p class="nrmltxt" id="ResultText">Solid run.Keep pushing to beat your high score</p>
+  </div>
+<div class="numbers-container">
+  <div class="results nrmltxt"  >WPM <span class="nrmltxt2" id="resultWPM">85</span></div>
+  <div class="results nrmltxt">Accuarcy <span id="resultACC" class="nrmltxt2">90%</span></div>
+  <div class="results nrmltxt">Characters <span id="resultSum" class="nrmltxt2">
+     <span style="color: hsl(140, 63%, 57%)" id="correctCar"> 120 </span>/ <span id="wrongCar" style="color: hsl(354, 63%, 57%)">
+      5</span></span> </div>
+</div>
+<div class="tryAgain">
+  Go Again
+</div>
+ </div>
   <script src="script.js"></script>
 </body>
 </html>
